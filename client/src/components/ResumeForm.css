@@ -1,0 +1,295 @@
+/* Base Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f6fa;
+  padding: 20px;
+  margin: 0;
+}
+
+/* Container for the Resume Form */
+.resume-form-container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+.resume-form-container:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Form Styling */
+.resume-form {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Heading */
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #2c3e50;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+/* Input Fields */
+.input-field,
+.textarea-field,
+.select-field {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 12px 0;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus,
+.textarea-field:focus,
+.select-field:focus {
+  border-color: #3498db;
+  background-color: #f0f9ff;
+  outline: none;
+  box-shadow: 0 0 8px rgba(52, 152, 219, 0.3);
+}
+
+/* Textarea Styling */
+.textarea-field {
+  height: 120px;
+  resize: vertical;
+}
+
+/* Labels */
+label {
+  font-weight: bold;
+  margin-bottom: 6px;
+  color: #34495e;
+}
+
+/* Button Styling */
+.submit-button,
+.preview-button {
+  padding: 14px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1.1rem;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+.submit-button:hover,
+.preview-button:hover {
+  background-color: #2980b9;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(41, 128, 185, 0.2);
+}
+
+.submit-button:active,
+.preview-button:active {
+  transform: translateY(1px);
+}
+
+/* Form Sections */
+.section-title {
+  margin-top: 30px;
+  font-size: 1.5rem;
+  color: #1abc9c;
+  border-bottom: 2px solid #1abc9c;
+  padding-bottom: 5px;
+  text-transform: uppercase;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .resume-form-container {
+    padding: 20px;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  .input-field,
+  .textarea-field,
+  .select-field {
+    font-size: 0.95rem;
+    padding: 10px;
+  }
+
+  .submit-button,
+  .preview-button {
+    font-size: 1rem;
+    padding: 12px;
+  }
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.resume-form-container {
+  animation: fadeIn 0.8s ease-in-out;
+}
+
+/* Success Message */
+.success-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #27ae60;
+  margin-top: 20px;
+}
+
+/* Error Message */
+.error-message {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #e74c3c;
+  margin-top: 20px;
+}
+/* src/components/ResumeForm.css */
+.resume-form-container {
+  max-width: 800px;
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f3f4f6;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.resume-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #4c4cf0;
+}
+
+.input-field, .textarea-field {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.input-field:focus, .textarea-field:focus {
+  border-color: #4c4cf0;
+  outline: none;
+}
+
+.preview-button {
+  padding: 12px;
+  background-color: #4c4cf0;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.preview-button:hover {
+  background-color: #364fc7;
+}
+
+.live-preview {
+  margin-top: 40px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.suggestions {
+  background-color: #e0e7ff;
+  padding: 10px;
+  border-radius: 6px;
+  margin-top: -10px;
+}
+.error-message {
+  color: red;
+  font-size: 0.9rem;
+  margin-top: -10px;
+  margin-bottom: 10px;
+}
+
+/* Save Draft and Export to PDF Buttons */
+.draft-button,
+.export-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background-color: #4c4cf0;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  text-align: center;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 15px;
+  margin-right: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Hover effect */
+.draft-button:hover,
+.export-button:hover {
+  background-color: #364fc7;
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(54, 79, 199, 0.2);
+}
+
+/* Active/Click effect */
+.draft-button:active,
+.export-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 3px 6px rgba(54, 79, 199, 0.15);
+}
+
+/* Responsive adjustments for buttons */
+@media (max-width: 768px) {
+  .draft-button,
+  .export-button {
+    font-size: 0.9rem;
+    padding: 10px 15px;
+    width: 100%;
+    margin-right: 0;
+  }
+}
+
+/* Button Icons (if needed) */
+.draft-button::before {
+  content: '📝'; /* Icon for Save Draft */
+  margin-right: 8px;
+}
+
+.export-button::before {
+  content: '📄'; /* Icon for Export to PDF */
+  margin-right: 8px;
+}

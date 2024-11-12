@@ -1,0 +1,197 @@
+/* Container Styling */
+.resume-preview {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    margin: 30px auto;
+    max-width: 800px;
+    line-height: 1.8;
+    color: #333;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .resume-preview:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Heading Styles */
+  .resume-preview h2 {
+    font-size: 2.2rem;
+    color: #4c4cf0;
+    margin-bottom: 15px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #4c4cf0;
+    padding-bottom: 10px;
+  }
+  
+  .resume-preview h3 {
+    font-size: 1.6rem;
+    color: #364fc7;
+    margin-top: 25px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #364fc7;
+    padding-bottom: 8px;
+  }
+  
+  /* Paragraph and Section Styles */
+  .resume-preview p {
+    margin: 12px 0;
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.7;
+  }
+  
+  .resume-preview .section {
+    margin-bottom: 25px;
+  }
+  
+  /* Skills Section */
+  .resume-preview .skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-top: 15px;
+  }
+  
+  .resume-preview .skills span {
+    background-color: #4c4cf0;
+    color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .resume-preview .skills span:hover {
+    background-color: #364fc7;
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Experience and Education Styling */
+  .resume-preview .experience,
+  .resume-preview .education {
+    padding-left: 20px;
+    border-left: 3px solid #4c4cf0;
+    margin-top: 20px;
+  }
+  
+  .resume-preview .experience h4,
+  .resume-preview .education h4 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 5px;
+  }
+  
+  .resume-preview .experience p,
+  .resume-preview .education p {
+    font-size: 1rem;
+    color: #666;
+    margin: 5px 0;
+  }
+  
+  /* Animation for Fade-in Effect */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .resume-preview {
+    animation: fadeIn 0.8s ease-in-out;
+  }
+  
+  /* Button Styles for Download */
+  .resume-preview .download-button {
+    display: inline-block;
+    background-color: #4c4cf0;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .resume-preview .download-button:hover {
+    background-color: #364fc7;
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .resume-preview {
+      padding: 25px;
+    }
+  
+    .resume-preview h2 {
+      font-size: 1.8rem;
+    }
+  
+    .resume-preview h3 {
+      font-size: 1.4rem;
+    }
+  
+    .resume-preview p {
+      font-size: 1rem;
+    }
+  
+    .resume-preview .skills span {
+      font-size: 0.85rem;
+      padding: 6px 12px;
+    }
+  
+    .resume-preview .download-button {
+      font-size: 0.9rem;
+      padding: 10px 20px;
+    }
+  }
+  
+  /* Contact Information Section */
+  .resume-preview .contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .resume-preview .contact-info p {
+    font-size: 1rem;
+    color: #444;
+    margin: 5px 0;
+  }
+  
+  .resume-preview .contact-info a {
+    color: #4c4cf0;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .resume-preview .contact-info a:hover {
+    color: #364fc7;
+  }
+  
+  /* Special Effects */
+  .resume-preview .highlight {
+    background-color: #ffefba;
+    padding: 3px 6px;
+    border-radius: 5px;
+    font-weight: bold;
+  }
+  
